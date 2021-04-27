@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+
+{% block content %}
+    <p>{{image_url}}</p>
+    <h1>list of ingredients items</h1>
+    <p>{%for ingredient in data%}
+            {{ingredient}}
+            <hr>
+        {%endfor%}
+    </p>
+
+{%endblock%}
